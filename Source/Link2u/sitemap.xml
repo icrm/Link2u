@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>http://www.link2u.com.br/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/index.php</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/sobre.html</loc>
+        <lastmod>2012-01-20T13:03:14+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/espaco.html</loc>
+        <lastmod>2012-01-19T22:34:51+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/planos.html</loc>
+        <lastmod>2012-01-24T17:54:42+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/vantagens.html</loc>
+        <lastmod>2012-01-20T00:02:34+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/localizacao.html</loc>
+        <lastmod>2012-01-20T00:06:13+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.link2u.com.br/contato.html</loc>
+        <lastmod>2012-01-19T22:34:50+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+</urlset>

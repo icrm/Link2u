@@ -1,0 +1,6 @@
+php_flag authmail.debug ON
+php_value authmail.port 587
+php_value authmail.address contato@link2u.com.br
+php_value authmail.smtp_account contato=link2u.com.br
+php_value authmail.smtp smtp.link2u.com.br
+php_value authmail.password link2u

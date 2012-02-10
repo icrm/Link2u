@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <meta name="author" content="Conceptdev Informatica"/>
+        <meta http-equiv="Content-Language" content="pt-BR"/>
+        <meta http-equiv="reply-to" content="suporte@conceptdev.com.br"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+
+        <title>Link2u - Coworking | Localização</title>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+        <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/styles-ie8.css" media="screen" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="screen" />
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
+        <script type="text/javascript">
+            function initialize() {
+                var latlng = new google.maps.LatLng(-23.557512, -46.660551);
+                var centerTo = new google.maps.LatLng(-23.557083,-46.660355);
+                var myOptions = {
+                    zoom: 17,
+                    center: centerTo,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    title: 'Link2u - Coworking'
+                });
+                var contentString = '<table border="0" height="25" style="font-size: 0.7em;"><tr><td width="110"><img src="images/logo.gif" width="110px"/></td><td width="170">Av. Paulista, 2.202 . 3º . conj. 3<br/> São Paulo - SP<br/>(11) 3253 7000</td></tr></table> ';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+                marker.setMap(map);
+                infowindow.open(map,marker);
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                });
+            }
+            jQuery(document).ready(function(){
+                initialize();
+                jQuery('a').each(function() {
+                    if(jQuery(this).attr('rel')=='nofollow') {
+                        jQuery(this).attr('target', '_blank');
+                    }
+                });
+                jQuery('.img-item').colorbox({
+                    rel:'img-item',
+                    opacity: 0.35,
+                    current: 'Imagem {current} de {total}'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="all">
+            <div id="header">
+                <div id="header-sect">
+                    <span class="tel">
+                        <span class="type">work</span>
+                        <span class="value">11 3253 7000</span>
+                    </span>
+                </div>
+                <div id="logo">
+                    <a href="index.php" title="Link2u" rel="home">
+                        <img src="images/logo.gif" alt="Link2u - Coworking" title="Link2u - Coworking" style="width: 185px; height: 90px;"/>
+                    </a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="sobre.html" title="sobre a link2u" rel="about">sobre a link2u</a></li>
+                        <li><a href="espaco.html" title="espa&ccedil;o" rel="services">espa&ccedil;o</a></li>
+                        <li><a href="planos.html" title="planos" rel="product">planos</a></li>
+                        <li><a href="vantagens.html" title="vantagens" rel="product">vantagens</a></li>
+                        <li><a href="localizacao.html" title="localiza&ccedil;&atilde;o" rel="location" class="selected">localiza&ccedil;&atilde;o</a></li>
+                        <li><a href="contato.html" title="contato" rel="contact nofollow">contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content">
+
+                <div id="slider-content">
+                    <h1 class="inner">__um endereço privilegiado com acesso fácil e toda comodidade.<a href="#" onclick="return false;" rel="home" class="destac">&gt;local</a></h1>
+                </div>
+                <div style="display: block;">
+                    <div class="empresa-container left" style="width: 193px; padding-left: 30px; padding-right: 50px;">
+                        <h3 class="inner">_O lugar ideal</h3>
+                        <p>A Link2U está muito bem localizada na Avenida Paulista entre as ruas Augusta e Haddock Lobo, próxima a ótimas opções de restaurantes, livrarias, shoppings, cinemas e servida pelas estações Consolação (Linha 2-Verde) e Paulista (Linha 4-Amarela) do Metrô de São Paulo.<br />
+                          <br />
+                          Considerada ponto turístico da cidade de São Paulo, a Avenida Paulista é um centro de negócios, bancos, consulados, hotéis, entretenimento e com fácil acesso a outros pontos importantes da cidade, como centros de convenções,<br />
+                        feiras e aeroportos.</p>
+                        <div class="like" style="margin-right: -40px; margin-top: 30px; margin-bottom: 20px;">
+                            <img src="images/like-link2u-min.gif" alt="Like!" title="Like!" style="float: left; padding-right: 5px; margin-top: -7px; width: 25px; height: 25px;"/>
+                          <h3 style="font-size: 0.9em;"><a href="contato.html">_Like! Eu quero uma vaga agora.</a></h3>
+                        </div>
+                        <img src="images/img-paulista-tarde.jpg" alt="" style="margin-bottom: -5px; margin-left: -30px; width: 273px;" title=""/>
+                    </div>
+
+                    <div class="empresa-container right" style="width: 576px;padding:0px;">
+                        <h3 style="font-size: 2.0em; padding-left: 30px; padding-right: 100px;">_Que tal uma voltinha rápida pelo bairro?</h3>
+                        <ul class="galleria-local">
+                            <li><a class="img-item" href="images/local01.jpg" ><img src="images/thumbs/local01.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local02.jpg" ><img src="images/thumbs/local02.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local03.jpg" ><img src="images/thumbs/local03.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local04.jpg" ><img src="images/thumbs/local04.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local05.jpg" ><img src="images/thumbs/local05.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local06.jpg" ><img src="images/thumbs/local06.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local07.jpg" ><img src="images/thumbs/local07.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local08.jpg" ><img src="images/thumbs/local08.jpg" alt="" title="" /></a></li>
+                            <li><a class="img-item" href="images/local09.jpg" ><img src="images/thumbs/local09.jpg" alt="" title="" /></a></li>
+
+                        </ul>
+                        <div id="map" style="width: 557px; height: 340px; margin-left: 20px; margin-top: 10px;"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li><a href="sobre.html" title="sobre a link2u" rel="about">sobre a link2u</a> | </li>
+                    <li><a href="espaco.html" title="espa&ccedil;o" rel="services">espa&ccedil;o</a> | </li>
+                    <li><a href="planos.html" title="planos" rel="product">planos</a> | </li>
+                    <li><a href="vantagens.html" title="vantagens" rel="product">vantagens</a> | </li>
+                    <li><a href="localizacao.html" title="localiza&ccedil;&atilde;o" rel="location">localiza&ccedil;&atilde;o</a> | </li>
+                    <li><a href="contato.html" title="contato" rel="contact nofollow">contato</a></li>
+                </ul>
+                <a href="http://www.twitter.com/link2ucoworking" title="Sig-nos no Twitter!"><img style="position: absolute; right: 100px; top: 20px;" src="images/bt-twitter.gif" alt="Link2u no Twitter" title="Link2u no Twitter"/></a>
+                <a href="http://www.facebook.com/link2uCoworking" title="Curta a Link2u no Facebook"><img style="position: absolute; right: 50px; top: 20px;" src="images/bt-facebook.gif" alt="Link2u no Facebook" title="Link2u no Facebook"/></a>
+                <p>Av. Paulista, 2.202 . 3&ordm; andar . CJ 31 . s&atilde;o paulo - sp . (11) 3253 7000</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-28228550-1']);
+            _gaq.push(['_setDomainName', 'link2u.com.br']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
+</html>

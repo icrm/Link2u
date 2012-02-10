@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+    <channel>
+        <title>ROR Sitemap for http://www.link2u.com.br/</title>
+        <link>http://www.link2u.com.br/</link>
+
+        <item>
+            <link>http://www.link2u.com.br/</link>
+            <title>Link2u - Coworking</title>
+            <description>Espaço de coworking, tenha seu escritório num ambiente moderno, cheio de gente bacana e no melhor endereço da cidade, a Avenida Paulista.</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>0</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/index.php</link>
+            <title>Link2u - Coworking</title>
+            <description>Espaço de coworking, tenha seu escritório num ambiente moderno, cheio de gente bacana e no melhor endereço da cidade, a Avenida Paulista.</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/sobre.html</link>
+            <title>Link2u - Coworking | Sobre a Link2u</title>
+            <description>Link2u - Coworking | Sobre a Link2u</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/espaco.html</link>
+            <title>Link2u - Coworking | Espaço</title>
+            <description>Link2u - Coworking | Espaço</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/planos.html</link>
+            <title>Link2u - Coworking | Planos</title>
+            <description>Link2u - Coworking | Planos</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/vantagens.html</link>
+            <title>Link2u - Coworking | Vantagens</title>
+            <description>Link2u - Coworking | Vantagens</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/localizacao.html</link>
+            <title>Link2u - Coworking | Localização</title>
+            <description>Link2u - Coworking | Localização</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+        <item>
+            <link>http://www.link2u.com.br/contato.html</link>
+            <title>Link2u - Coworking | Contato</title>
+            <description>Link2u - Coworking | Contato</description>
+            <ror:updatePeriod>weekly</ror:updatePeriod>
+            <ror:sortOrder>1</ror:sortOrder>
+            <ror:resourceOf>sitemap</ror:resourceOf>
+        </item>
+    </channel>
+</rss>
+  
