@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?php
+
+$url = $_GET['url'];
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -9,19 +13,15 @@
         <meta name="author" content="IDiT Tecnologia" />
         <meta http-equiv="content-language" content="pt" />
         <meta http-equiv="reply-to" content="suporte@idit.com.br" />
-        <meta name="keywords" content="coworking, escritÔøΩrio virtual, escritÔøΩrio compartilhado, colaborativo, link2u"/>
-        <meta name="description" content="Entre em contato agora mesmo e garanta a sua mesa num espaÁo moderno, agrad·vel e cheio de gente bacana."/>
 
-        <title>Link2u - Coworking | Contato</title>
+        <title>Link2u - Coworking | Compartilhar p√°gina por email</title>
 
         <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
-        <!--[if IE 8]>
-        <link rel="stylesheet" type="text/css" href="css/styles-ie8.css" media="screen" />
-        <![endif]-->
         <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="screen" />
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/general.pack.js"></script>
-        <script type="text/javascript" src="js/contato.pack.js"></script>
+        <script type="text/javascript" src="js/share-email.pack.js"></script>
         <script type="text/javascript" src="js/masked-input/jquery.maskedinput-1.3.min.js"></script>
         <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="js/field-hint/hint.pack.js"></script>
@@ -47,7 +47,7 @@
                         <li><a href="planos.html" title="planos" rel="product">planos</a></li>
                         <li><a href="vantagens.html" title="vantagens" rel="product">vantagens</a></li>
                         <li><a href="localizacao.html" title="localiza&ccedil;&atilde;o" rel="location">localiza&ccedil;&atilde;o</a></li>
-                        <li><a href="contato.html" title="contato" rel="contact nofollow" class="selected">contato</a></li>
+                        <li><a href="contato.html" title="contato" rel="contact nofollow">contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,13 +55,14 @@
             <div id="content">
 
                 <div id="slider-content">
-                    <h1 class="inner">__entre em contato <span class="destac">&gt;contato</span></h1>
+                    <h1 class="inner">__Compartilhar por e-mail</h1>
                 </div>
                 <div style="display: block;">
                     <div class="empresa-container left" style="width: 193px; padding-left: 30px; padding-right: 50px; height: 500px;">
-                        <h3 class="inner">_N&atilde;o perca tempo</h3>
+                        <h3 class="inner">_Compartilhe</h3>
                         <p>
-                            Entre em contato agora mesmo e garanta a sua mesa num espa&ccedil;o moderno, agrad&aacute;vel e cheio de gente bacana.
+                            Quer avisar algu&eacute;m sobre a <a href="http://www.link2u.com.br" title="Link2u - Coworking">Link2u</a>? Basta preencher o formul&aacute;rio ao lado e clicar em 
+                            "Compartilhar".
                         </p>
                         <div class="like" style="margin-right: -40px; margin-top: 30px; margin-bottom: 20px; position: absolute; bottom: 0px;">
                             <img src="images/like-link2u-min.gif" alt="Like!" title="Like!" style="float: left; padding-right: 5px; margin-top: -7px; width: 25px; height: 25px;"/>
@@ -70,46 +71,41 @@
                     </div>
 
                     <div class="empresa-container right" style="width: 506px;">
-                        <h3 class="inner">_Entre em contato</h3>
+                        <h3 class="inner">__Compartilhar por e-mail</h3>
                         <p class="content inner">
-                            Av. Paulista, 2.202 . 3&ordm; andar. CJ 31 . s&atilde;o paulo - sp<br />
-                            Hor&aacute;rio de funcionamento das 9:00h &agrave;s 21:00h<br/><br/>
-                            +55 (11) 3253 7000
+                            <h3 style="display: inline;">P&aacute;gina:</h3> <a href="<?php echo $url ?>"><?php echo $url ?></a>
                         </p>
-                        <p>
-                            <a href="mailto:contato@link2u.com.br">contato@link2u.com.br</a><br />
-                        </p>
-                        <p class="content inner azul">
-                            Atrav&eacute;s deste canal de comunica&ccedil;&atilde;o voc&ecirc; pode tirar d&uacute;vidas, solicitar
-                            informa&ccedil;&otilde;es, enviar sugest&otilde;es ou agendar uma visita.
-                        </p>
-                        <form method="post" action="mail.php" id="contactForm">
+
+                        <form method="post" action="share.php" id="contactForm">
+                            <input type="hidden" name="link" value="<?php echo $url; ?>" />
                             <div class="formRow">
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="nome" id="nome" value="" />
+                                <label for="emailTo">Para:</label>
+                                <input type="text" name="emailTo" id="emailTo" value="" />
+                                <p style="display: block; float: right; width: 400px;">
+                                    Informe o email da pessoa com a qual voc&ecirc; deseja compartilhar este link.<br/>
+                                    Para mais de uma pessoa separe os endere&ccedil;os com v&iacute;rgulas.
+                                </p>
                             </div>
                             <div class="formRow">
-                                <label for="email">E-mail:</label>
-                                <input type="text" name="email" id="email" value="" />
+                                <label for="nomeFrom">Meu Nome:</label>
+                                <input type="text" name="nomeFrom" id="nomeFrom" value="" />
+                            </div>
+                            <div class="formRow">
+                                <label for="emailFrom">Meu E-mail:</label>
+                                <input type="text" name="emailFrom" id="emailFrom" value="" />
 
                             </div>
                             <div class="formRow">
-                                <label for="fone">Fone:</label>
-                                <input type="text" name="fone" id="fone" value="" title="(__) ____-____"/><br />
-                                <label>&nbsp;</label>
-                                <span class="help">(ex.: (11) 1234-5678)</span>
-                            </div>
-                            <div class="formRow">
-                                <label for="empresa">Empresa:</label>
-                                <input type="text" name="empresa" id="empresa" value="" />
-                            </div>
-                            <div class="formRow">
-                                <label for="mensagem">Mensagem:</label>
-                                <textarea name="mensagem" id="mensagem" cols="10" rows="8"></textarea>
+                                <label for="comments">Comet&aacute;rios:</label>
+                                <textarea name="comments" id="comments" cols="10" rows="8"></textarea>
                             </div>
                             <div class="formRow">
                                 <label>&nbsp;</label>
-                                <input type="submit" value="Enviar" class="send-form" />
+                                <input type="checkbox" id="copyme" value="copyme" name="copyme" />&nbsp;<label for="copyme" class="scape">Quero receber uma c&oacute;pia da mensagem</label>
+                            </div>
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <input type="submit" value="Compartilhar" class="send-form" />
                             </div>
                         </form>
                     </div>
@@ -128,9 +124,8 @@
                     <li><a href="localizacao.html" title="localiza&ccedil;&atilde;o" rel="location">localiza&ccedil;&atilde;o</a> | </li>
                     <li><a href="contato.html" title="contato" rel="contact nofollow">contato</a></li>
                 </ul>
-                <a href="http://www.twitter.com/link2ucoworking" title="Sig-nos no Twitter!"><img style="position: absolute; right: 150px; top: 20px;" src="images/bt-twitter.gif" alt="Link2u no Twitter" title="Link2u no Twitter"/></a>
-                <a href="http://www.facebook.com/link2uCoworking" title="Curta a Link2u no Facebook"><img style="position: absolute; right: 100px; top: 20px;" src="images/bt-facebook.gif" alt="Link2u no Facebook" title="Link2u no Facebook"/></a>
-                <a href="share_email.php?url=http://www.link2u.com.br/contato.html" title="Compartilhe por E-mail"><img style="position: absolute; right: 50px; top: 20px;" src="images/bt-email.png" alt="Compartilhe por E-mail" title="Compartilhe por E-mail"/></a>
+                <a href="http://www.twitter.com/link2ucoworking" title="Sig-nos no Twitter!"><img style="position: absolute; right: 100px; top: 20px;" src="images/bt-twitter.gif" alt="Link2u no Twitter" title="Link2u no Twitter"/></a>
+                <a href="http://www.facebook.com/link2uCoworking" title="Curta a Link2u no Facebook"><img style="position: absolute; right: 50px; top: 20px;" src="images/bt-facebook.gif" alt="Link2u no Facebook" title="Link2u no Facebook"/></a>
                 <p>
                     Av. Paulista, 2.202 . 3&ordm; andar . CJ 31 . s&atilde;o paulo - sp . (11) 3253 7000
                     <a href="http://validator.w3.org/check?uri=referer" rel="nofollow" class="external" style="float: right; font-size: 0.7em; padding-top: 3px; padding-right: 31px;">[XHTML 1.0 - Strict]</a>
@@ -141,7 +136,7 @@
             <div id="inline_content">
                 <h3 class="inner">_Obrigado</h3>
                 Sua mensagem foi enviada com sucesso. <br />
-                Logo entraremos em contato!
+                Continue navegando em nosso site!
             </div>
         </div>
         <script type="text/javascript">

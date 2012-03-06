@@ -60,7 +60,7 @@ p {
     font-size: 0.8em;
 }
 
-input {
+input[type=text], input[type=submit] {
     border: 1px solid #bab9b8;
     height: 23px;
     width: 350px;
@@ -78,6 +78,12 @@ label {
     text-align: right;
     width: 100px;
     font-size: 0.8em;
+}
+
+label.scape {
+    display: inline;
+    float: none;
+    text-align: left;
 }
 
 label.error {
@@ -181,8 +187,14 @@ label.error {
 
 #slider-content h1.inner .destac {
     font-size: 1.1em;
+    background-color: #8dc63f;
+    color: #ffffff;
+    display: block;
+    float: right;
+    padding: 0px 40px;
     padding-left: 25px;
-    text-align: left;
+    text-align: center;
+    text-decoration: none;
 }
 
 #slider-content h1 a:hover {text-decoration: underline;}
@@ -592,3 +604,5 @@ table.planos td.empty {
 }
 
 table.planos td span { text-transform: none; }
+
+.hint {color: #cccccc;}
