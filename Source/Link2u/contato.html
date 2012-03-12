@@ -84,12 +84,13 @@
                             informa&ccedil;&otilde;es, enviar sugest&otilde;es ou agendar uma visita.
                         </p>
                         <form method="post" action="mail.php" id="contactForm">
+                            <div id="messages"></div>
                             <div class="formRow">
-                                <label for="nome">Nome:</label>
+                                <label for="nome">* Nome:</label>
                                 <input type="text" name="nome" id="nome" value="" />
                             </div>
                             <div class="formRow">
-                                <label for="email">E-mail:</label>
+                                <label for="email">* E-mail:</label>
                                 <input type="text" name="email" id="email" value="" />
 
                             </div>
@@ -106,6 +107,10 @@
                             <div class="formRow">
                                 <label for="mensagem">Mensagem:</label>
                                 <textarea name="mensagem" id="mensagem" cols="10" rows="8"></textarea>
+                            </div>
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <em>* Campos de preenchimento obrigat&oacute;rio.</em>
                             </div>
                             <div class="formRow">
                                 <label>&nbsp;</label>

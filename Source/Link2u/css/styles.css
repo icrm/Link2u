@@ -282,7 +282,7 @@ label.error {
 #snippet-news h3 {
     display: block;
     float: right;
-    width: 240px;
+    width: 220px;
     margin: 5px;
 }
 
@@ -295,7 +295,7 @@ label.error {
     clear: both;
 }
 
-#snippet-news { width: 304px; }
+#snippet-news { width: 284px; }
 #snippet-product{ width: 265px; }
 #snippet-twitter { width: 268px; }
 
@@ -606,3 +606,15 @@ table.planos td.empty {
 table.planos td span { text-transform: none; }
 
 .hint {color: #cccccc;}
+
+.field-error {
+    border: 1px solid #cd0a0a !important;
+}
+#messages {
+    display:none;
+    text-align: center;
+    background: #fef1ec;
+    border: 1px solid #cd0a0a;
+    color: #cd0a0a;
+    margin: 5px;
+}
